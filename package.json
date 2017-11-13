@@ -1,0 +1,36 @@
+{
+  "name": "md-medium",
+  "version": "0.0.1",
+  "description": "Command line tool to publish markdown posts on Medium",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "node_modules/.bin/eslint src",
+    "build": "rm -rf dist && mkdir dist && node_modules/babel-cli/bin/babel.js --copy-files src -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavloo/md-medium.git"
+  },
+  "keywords": [
+    "markdown",
+    "medium",
+    "blogging"
+  ],
+  "author": "Pavlo Osadchyi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pavloo/md-medium/issues"
+  },
+  "homepage": "https://github.com/pavloo/md-medium#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.2",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-es2015-destructuring": "^6.23.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb": "^16.1.0"
+  }
+}
