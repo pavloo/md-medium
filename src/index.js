@@ -1,1 +1,3 @@
-console.log('yo');
+import auth from './lib/auth';
+
+auth();
